@@ -17,8 +17,9 @@ def main():
     monthsSum = 0
     # loop through jobs, retrieve yoe for each
     for x in range(jobs):
-        years = int(input(f"Enter number of years at job {x + 1}: "))
-        months = int(input(f"Enter number of months at job {x + 1}: "))
+        print(f"\nJob {x+1}")
+        years = int(input(f"Enter number of years: "))
+        months = int(input(f"Enter number of months: "))
         yearsSum += years
         monthsSum += months
     # convert years to months for easier math
@@ -29,8 +30,8 @@ def main():
     totalYearsExp = math.floor(totalMonths / 12)
     # get total months with modulo operator by 12
     totalMonthsExp = totalMonths % 12
-    print(totalMonthsExp)
-    print(f"Your total years of experience is: {totalYearsExp} yrs {totalMonthsExp} months")
+    print("\n")
+    print(f"Your total years of experience is: {totalYearsExp} years {totalMonthsExp} months")
 
 
 if __name__ == "__main__":
